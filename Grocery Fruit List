@@ -1,0 +1,24 @@
+Create table groceries (id integer primary key, name text, color text, price integer, aisle integer);
+
+Insert into groceries values (1, "bananas", "yellow", 3.20, 3);
+Insert into groceries values (2, "grapes", "purple", 5.50, 2);
+Insert into groceries values (3, "oranges", "orange", 5.99, 2);
+Insert into groceries values (4, "bread", "white", 3.99, 8);
+Insert into groceries values (5, "cups", "red", 5, 9);
+Insert into groceries values (6, "apple", "red", 4.99, 2);
+Insert into groceries values (7, "lemons", "yellow", 3, 6);
+Insert into groceries values (8, "kiwi", "green", 6, 1);
+Insert into groceries values (9, "limes", "green", 3.50, 1);
+Insert into groceries values (10, "pears", "yellow", 6.50, 9);
+Insert into groceries values (11, "blueberries", "purple", 5, 7);
+Insert into groceries values (12, "honeydew", "green", 3, 4);
+Insert into groceries values (13, "mangos", "orange", 7.00, 4); 
+Insert into groceries values (14, "pineapples", "yellow", 5.00, 4);
+Insert into groceries values (15, "peach", "yellow", 3, 9);
+
+
+Find the groceries in the aisles that are in aisle 6 or less
+Select * from groceries where aisle < 6 order by aisle; 
+
+--What is the total price of all groceries?
+Select aisle, sum(price) from groceries
